@@ -17,23 +17,6 @@ h1 {
     color: white;
 }
 
-.system {
-    position: relative;
-    z-index: 1; /* Puts the text above the stripe */
-    color: #33aaff; /* Light blue color like in the example */
-}
-
-.system::after {
-    content: "";
-    position: absolute;
-    left: -5px;
-    right: -5px;
-    top: 50%;
-    transform: translateY(-50%);
-    height: 10px; /* Thickness of the stripe */
-    background-color: #1a1a1a; /* Darker shade for contrast */
-    z-index: -1; /* Sends the stripe behind the text */
-}
 body {
     background-color: black;
     color: white; 
@@ -138,7 +121,7 @@ section {
 }
 
 .planet-item {
-    background-color: black; /* Ensures individual planet cards match */
+    background-color: black;
     border-radius: 10px;
     padding: 10px;
 }
