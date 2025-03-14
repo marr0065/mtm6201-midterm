@@ -178,6 +178,7 @@ section {
 .learn-more:hover {
     background-color: rgb(62, 71, 203);
 }
+
 @media (max-width: 900px) {
     .grid {
         grid-template-columns: repeat(3, 1fr);
