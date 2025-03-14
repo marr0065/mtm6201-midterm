@@ -1,0 +1,174 @@
+/*
+ *   Copyright (c) 2025 
+ *   All rights reserved.
+ */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+h1 {
+    position: relative;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+.system {
+    position: relative;
+    z-index: 1; /* Puts the text above the stripe */
+    color: #33aaff; /* Light blue color like in the example */
+}
+
+.system::after {
+    content: "";
+    position: absolute;
+    left: -5px;
+    right: -5px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 10px; /* Thickness of the stripe */
+    background-color: #1a1a1a; /* Darker shade for contrast */
+    z-index: -1; /* Sends the stripe behind the text */
+}
+body {
+    background-color: black;
+    color: white; 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+nav h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+}
+
+.highlight {
+    color: #58C4DD;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.btn {
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.hero {
+    background: url("../midterm-images/milky-way.jpg") no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 5px black;
+}
+
+.hero h2 {
+    font-size: 32px;
+}
+
+.solar-text {
+    color: #58C4DD;
+    font-weight: bold;
+}
+
+.planets {
+    padding: 50px;
+}
+
+section {
+    background-color: black; 
+    padding: 20px;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.planet-item img {
+    width: 100%;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.planet-item img:hover {
+    transform: scale(1.1);
+}
+
+.planet-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: black;
+    padding: 20px;
+}
+
+.planet-item {
+    background-color: black; /* Ensures individual planet cards match */
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.learn-more {
+    background: purple;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+@media (max-width: 900px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
