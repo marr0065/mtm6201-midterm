@@ -111,7 +111,7 @@ nav a {
 .solar-text {
     color: #58C4DD;
     font-weight: bold;
-    transition: color 5s ease;
+    
 }
 
 .solar-text {
@@ -130,9 +130,9 @@ section {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(115px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
     gap: 20px;
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -180,7 +180,7 @@ section {
 }
 @media (max-width: 900px) {
     .grid {
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
