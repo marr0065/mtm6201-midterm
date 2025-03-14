@@ -85,7 +85,7 @@ nav a {
 .wrapper {
     max-width: 900px;
     margin: 0 auto;
-    padding: 0 20px; /* Adds some space on small screens */
+    padding: 0 20px; 
 }
 
 .hero {
